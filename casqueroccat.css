@@ -6,12 +6,14 @@
 
 body{
     background-color: white;
+    background-image: none;
+
 }
 
 .articles-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 5rem;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -56,6 +58,3 @@ body{
     }
 }
 
-body{
-    background-image: none;
-}
