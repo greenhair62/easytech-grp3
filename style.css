@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+                                                                         /* HEADER  */
+
+/* ICON */
+
+header{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: #91b6b7;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* BARRE DE RECHERCHE  */
+
+.recherche{
+    height: 10px;
+    margin-top: 35px;
+    display: flex;
+    margin-left: 50px;
+}
+
+input[type=search] {
+    width: 600px;
+    height: 30px;
+    border: 1px solid #0C7D7B;
+    border-radius: 20px;
+}
+
+.recherche img{
+    height: 20px;
+    margin-top: 5px;
+}
+
+
+
+/* MENU */
+
+
+
+.menu{
+    background-color: #91b6b7;
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    height: 70px;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.titre{
+    width: 10%;
+    height: 40px;
+    margin: 30px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lien{
+    background-color: #91b6b7;
+    width: 40%;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 12px;
+}
+                                                    /* MAIN NAV BAR*/
+
+.raccourcis{
+    width: 100%;
+    height: 55px;   
+    border: solid  #0C7D7B 2px;
+    background-color: #91b6b7;
+    text-decoration: none;
+}
+
+a, a:hover, a:visited, a:active
+{
+	color:white;
+	text-decoration:none;
+}
+
+.hmenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* color: white; */
+}
+
+.traits img{
+    height: 15px;
+    margin:auto;
+}
+
+.txtpro{
+    font-weight: 700;
+    float: right;
+}
+
+
+                                                        /* TITRE */
+
+body {
+    background-color: rgba(241, 243, 241, 0.459);
+    background-image: url(img/bkfin.png);
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    padding: 0;
+}
+
+.titrebody {
+    text-shadow: rgb(212, 212, 212) 3px 3px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: rgb(56, 56, 56);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+
+}
+
+.myCss {
+    width: 900px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+
+/* LOGOS AVEC NOS ENGAGEMENTS */
+
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+span {
+    flex-direction: column;
+    width: 30%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+    text-shadow: rgb(212, 212, 212) 3px 3px;
+
+}
+
+
+/* SCROLL AVEC LES ARTICLES */
+
+.scroller {
+    width: 50%;
+    height: 150px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* scrollbar-color: rebeccapurple rgb(128, 0, 6); */
+    /* scrollbar-width: thin; */
+}
+
+.image {
+    width: 180px;
+    height: 100px;
+    /* background-color: rgb(194, 192, 191); */
+    margin: 0px 10px;
+}
+
+/* PRODUITS LUDO */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(182, 182, 182);
+    width: 180px;
+}
+.container_pdts {
+
+        background-color: lightslategray;
+        height: 200vh;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: center;
+        }
+
+.item_pdts {
+    
+    background-color: teal;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.picture {
+
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    font-size: 40px;
+    color: white;
+
+}
+
+.container_pdts_spe {
+
+    background-color: lightslategray;
+    height: 200vh;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    }
+
+    .descrition_pdts_spe_top {
+        
+        background-color: teal;
+        width: 100%;
+        height: 500px;
+        margin: 20px;
+        font-size: 40px;
+        color: white;
+
+    }
+
+.container .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .item h4 {
+    background-color: rgb(182, 182, 182);
+    margin-bottom: 20px;
+}
+
+.container .item p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.container .item h4 span {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.container .item p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* A PROPOS */
+
+article{
+    margin-top: 5%;
+
+}
+
+.art{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.art1{
+    /* border: #b3d3d4 solid 2px; */
+    background-color: #91b6b7 ;
+    box-shadow: 2px 2px 10px 4px #b8b8b8;
+    width: 400px;
+    height: 320px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.art3{
+    /* border: #91B6B7 solid 2px; */
+    background-color: #91b6b7 ;
+    box-shadow: 2px 2px 10px 4px #b8b8b8;
+    width: 400px;
+    height: 320px;
+    text-align: center;
+    font-size: 15px;
+    }
+
+/* FOOTER : les réseaux sociaux*/
+
+
+footer{
+    background-color: #91B6B7;
+    color: white;
+    height: 100px;
+    margin-top: 50px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-family: 'Merienda', cursive;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+}
+
+.flogo{
+    margin: 0;
+    object-position: center;
+}
