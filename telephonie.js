@@ -1,17 +1,17 @@
 const articles = [
     {
         id: 1,
-        denomination: "MILLENIUM RHB GAMING PACK",
-        marque: 'MILLENIUM',
+        denomination: "Xiaomi Mi 11 5G",
+        marque: 'Xiaomi',
         couleur: 'noir',
-        type: 'filaire',
+        type: 'telephonie',
         dispo: 'EN STOCK',
-        price: 139.94,
-        img: './img/clavier_souris_tapis_rgb.jpg'
+        price: 745.94,
+        img: '../EASYTECH grp3/img/xiaomi Mi 11 5g 749.jpg'
     },
     {
         id: 2,
-        denomination: "ROCCAT VULCAN 122 AIMO + KONE AIMO REMASTERED",
+        denomination: "Samsung Galaxy S20",
         marque: 'ROCCAT',
         couleur: 'blanc',
         type: 'filaire',
