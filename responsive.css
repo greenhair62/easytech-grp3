@@ -1,0 +1,23 @@
+@media (min-width: 501px) and (max-width: 767px) {
+
+    .input {
+
+        height: 20px;
+        border: 1px solid #0C7D7B;
+        border-radius: 20px;
+    }
+
+    
+
+    .footer {
+
+        height: 0px;
+
+
+    }
+
+}
+  
+
+@media (max-width: 500px) {}
+

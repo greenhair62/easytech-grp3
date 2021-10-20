@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER  */
+
+/* ICON */
+
+header{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: #91b6b7;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* BARRE DE RECHERCHE  */
+
+.recherche{
+    height: 10px;
+    margin-top: 35px;
+    display: flex;
+    margin-left: 50px;
+}
+
+input[type=search] {
+    width: 400px;
+    height: 30px;
+    border: 1px solid #0C7D7B;
+    border-radius: 20px;
+}
+
+.recherche img{
+    height: 20px;
+    margin-top: 5px;
+}
+
+
+
+/* MENU */
+
+
+
+.menu{
+    background-color: #91b6b7;
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    height: 70px;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.titre{
+    width: 10%;
+    height: 40px;
+    margin: 30px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lien{
+    background-color: #91b6b7;
+    width: 40%;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 12px;
+}
+                                                    /* MAIN NAV BAR*/
+
+.raccourcis{
+    width: 100%;
+    height: 55px;   
+    border: solid  #0C7D7B 2px;
+    background-color: #91b6b7;
+    text-decoration: none;
+}
+
+a, a:hover, a:visited, a:active
+{
+	color:white;
+	text-decoration:none;
+}
+
+.hmenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* color: white; */
+}
+
+.traits img{
+    height: 15px;
+    margin:auto;
+}
+
+.txtpro{
+    font-weight: 700;
+    float: right;
+}
+
+
+     /* TITRE */
+
+body {
+    background-color: rgba(241, 243, 241, 0.459);
+   
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+    padding: 0;
+}
+
+.titrebody {
+    text-shadow: rgb(212, 212, 212) 3px 3px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: rgb(56, 56, 56);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+
+}
+
+.myCss {
+    width: 900px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+
+/* LOGOS AVEC NOS ENGAGEMENTS */
+
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+span {
+    flex-direction: column;
+    width: 30%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+    text-shadow: rgb(212, 212, 212) 3px 3px;
+
+}
+/* 
+ARTICLES */
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .articles-container .article {
+    margin: 10px 20px;
+    border: 1px solid rgb(53, 53, 53);
+    width: 300px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 
+    0 1px 3px 1px rgba(60, 64, 67, 0.15); 
+}
+
+  .articles-container .article img {
+    width: 80%;
+    margin: 10px 10%;
+}
+
+  .articles-container .article h2 {
+    text-align: center;
+}
+
+  .articles-container .article>p {
+    color: #27ae60;
+    text-align: center;
+    font-weight: 600;
+}
+
+  .articles-container .article .article-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+  .articles-container .article .article-action p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #c0392b;
+}
+
+  .articles-container .article .article-action button {
+    border: 0;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    background-color: #91b6b7;
+}
+
+  .articles-container .article .article-action button:hover {
+    background-color: #0C7D7B;
+    color: #1b1b1b;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #91B6B7;
+    color: white;
+    height: 150px;
+    margin-top: 50px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-family: 'Merienda', cursive;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+
+.flogo{
+    margin: 0;
+    object-position: center;
+}
