@@ -80,6 +80,28 @@ const articles = [
     
     divAction.append(price, btn);
     divArticle.append(image, h2, paragraph, divAction);
+
+        //changement de bouton panier
+        const btnDelete = document.createElement('button');
+        btnDelete.style.backgroundColor = 'red';
+        btnDelete.innerText = "Supprimer du panier";
+        divAction.append(price, btn, btnDelete);
+        btnDelete.classList.add('dnone');
+    
+        btn.addEventListener('click', (event) => {
+            event.preventDefault();
+            btn.classList.add('dnone');
+            btnDelete.classList.remove('dnone');
+        })
+    
+            btnDelete.addEventListener('click', (event) => {
+            event.preventDefault();
+            btnDelete.classList.add('dnone');
+            btn.classList.remove('dnone');
+        })
+    
+    
+    
     return divArticle;
     }
     
