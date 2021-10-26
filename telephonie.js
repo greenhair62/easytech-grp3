@@ -7,77 +7,77 @@ const articles = [
         type: 'telephonie',
         dispo: 'EN STOCK',
         price: 745.94,
-        img: '../EASYTECH grp3/img/xiaomi Mi 11 5g 749.jpg'
+        img: './img/xiaomi Mi 11 5g 749.jpg'
     },
     {
         id: 2,
-        denomination: "Samsung Galaxy S20",
-        marque: 'ROCCAT',
-        couleur: 'blanc',
-        type: 'filaire',
+        denomination: "Samsung S20",
+        marque: 'Samsung',
+        couleur: 'noir',
+        type: 'telephonie',
         dispo: 'EN STOCK',
-        price: 162.95,
-        img: './img/clavier_roccat_rgb.jpg'
+        price: 497.00,
+        img: './img/s20.jpg'
     },
     {
         id: 3,
-        denomination: "CORSAIR K57 RGB + HARPOON RGB",
-        marque: 'CORSAIR',
+        denomination: "Samsung Galaxy S21",
+        marque: 'Samsung',
         couleur: 'noir',
-        type: 'sans fil',
+        type: 'telephonie',
         dispo: 'EN STOCK',
-        price: 139.94,
-        img: './img/clavier_corsair.jpg'
+        price: 799.99,
+        img: './img/s21.jpg'
     },
     {
         id: 4,
-        denomination: "MILLENIUM RHB GAMING PACK",
-        marque: 'MILLENIUM',
+        denomination: "Galaxy Z Fold3 5G",
+        marque: 'Samsung',
         couleur: 'noir',
-        type: 'filaire',
+        type: 'telephonie',
         dispo: 'EN STOCK',
-        price: 139.94,
-        img: './img/boitier_blanc_noir_rgb.jpg'
+        price: 1899.99,
+        img: './img/zfold.jpg'
     },
     {
         id: 5,
-        denomination: "MILLENIUM RHB GAMING PACK",
-        marque: 'MILLENIUM',
+        denomination: "xiaomi Mi 10 T pro 5g",
+        marque: 'Xiaomi',
         couleur: 'noir',
-        type: 'filaire',
+        type: 'telephonie',
         dispo: 'EN STOCK',
-        price: 139.94,
-        img: './img/clavier_souris_tapis_rgb.jpg'
+        price: 500.00,
+        img: './img/xiaomi Mi 10 T pro 5g.jpg'
     },
     {
         id: 6,
-        denomination: "ROCCAT VULCAN 122 AIMO + KONE AIMO REMASTERED",
-        marque: 'ROCCAT',
+        denomination: "Iphone xr",
+        marque: 'iphone',
         couleur: 'blanc',
-        type: 'filaire',
+        type: 'telephonie',
         dispo: 'EN STOCK',
-        price: 162.95,
-        img: './img/clavier_roccat_rgb.jpg'
+        price: 300.00,
+        img: './img/iphone xr 300.jpg'
     },
     {
         id: 7,
-        denomination: "CORSAIR K57 RGB + HARPOON RGB",
-        marque: 'CORSAIR',
-        couleur: 'noir',
-        type: 'sans fil',
+        denomination: "Iphone-13-pro-gold-select",
+        marque: 'iphone',
+        couleur: 'gold',
+        type: 'telephonie',
         dispo: 'EN STOCK',
-        price: 139.94,
-        img: './img/clavier_corsair.jpg'
+        price: 1159.99,
+        img: './img/iphone-13-pro-gold-select.png'
     },
     {
         id: 8,
-        denomination: "MILLENIUM RHB GAMING PACK",
-        marque: 'MILLENIUM',
+        denomination: "APPLE iPhone 12 Pro 128Go Graphite",
+        marque: 'iphone',
         couleur: 'noir',
-        type: 'filaire',
+        type: 'telephonie',
         dispo: 'EN STOCK',
-        price: 139.94,
-        img: './img/boitier_blanc_noir_rgb.jpg'
+        price: 949.99,
+        img: './img/apple-iphone-12-pro-128go-graphite.jpg'
     },
 
     ]
@@ -117,10 +117,34 @@ const articles = [
     
     const btn = document.createElement('button');
     btn.innerText = "Ajouter au panier";
+
+    const btn2 = document.createElement('button2');
+
+    function AddtoCart() {
+        console.log('hi');
+        var x = document.getElementById('btn');
+        var new_row = x.rows[1].cloneNode(true);
+        var len = x.rows.length;
+        new_row.cells[0].innerHTML = len;
+        var inp1 = new_row.cells[1].getElementsByTagName('input')[0];
+        inp1.id += len;
+        inp1.value = '';
+        var inp2 = new_row.cells[2].getElementsByTagName('input')[0];
+        inp2.id += len;
+        inp2.value = '';
+        x.appendChild(new_row);
+      }
+
+    btn.innerText = "supprimer";
     
-    divAction.append(price, btn);
+    
+    divAction.append(price, btn, btn2);
     divArticle.append(image, h2, paragraph, divAction);
     return divArticle;
     }
     
     displayArticle();
+
+    
+
+ 
