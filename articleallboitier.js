@@ -46,6 +46,12 @@ const articles = [
 
     ]
     
+    //panier
+    let panier = [];
+
+
+
+
     const articleContainer = document.querySelector('.articles-container');
     
     const displayArticle = () => {
@@ -84,7 +90,43 @@ const articles = [
     
     divAction.append(price, btn);
     divArticle.append(image, h2, paragraph, divAction);
+
+    //changement de bouton panier
+    const btnDelete = document.createElement('button');
+    btnDelete.style.backgroundColor = 'red';
+    btnDelete.innerText = "Supprimer du panier";
+    divAction.append(price, btn, btnDelete);
+    btnDelete.classList.add('dnone');
+
+    btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        btn.classList.add('dnone');
+        btnDelete.classList.remove('dnone');
+        addArticleToCart(article);
+    })
+
+        btnDelete.addEventListener('click', (event) => {
+        event.preventDefault();
+        btnDelete.classList.add('dnone');
+        btn.classList.remove('dnone');
+        removeArticleToCart(article);
+    })
+
+
+
     return divArticle;
+    }
+
+    const addArticleToCart = (article) =>{
+        panier.push(article);
+        console.log(panier);
+    }
+    
+    //13 fonction supprimer l'article du panier
+    const removeArticleToCart = (article) => {
+        let deleteArticle = panier.filter(value => value.id !== article.id) //1 2 3 // il garde 1 et le 3
+        panier = deleteArticle;
+        console.log(panier);
     }
     
     displayArticle();
